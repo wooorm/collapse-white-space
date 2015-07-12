@@ -1,0 +1,16 @@
+language: node_js
+script: npm run-script test-travis
+node_js:
+- '0.10'
+- '0.11'
+- '0.12'
+- iojs
+sudo: false
+after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+deploy:
+  provider: npm
+  email: tituswormer@gmail.com
+  api_key:
+    secure: YbxMW8SBRvr3ONahEloPap/uzJLFbcwWCPYTSTP7PAtJPChe4Syx+5Ao/N2Uszxez4yQonGWBYs8zV6yBu9hXGx1PIJRvu4n70d8OpuCM0ST1o7O7O3normm3oNRiqpf7Owg84VQD43LXpG1DSbM9x2ZR+EaFJ+US2Bv+o4Xce8fKC3UDb1S2qxVp4n1EX2fF+pjTdg/nzbACcIMH4lyn+ujJgEzVZvWKmRYnC1jPJ4gnuNHgnSvnSz36PK2XfcB0YOzntMtQL0/Hui40/SLEV9oMi/cZA4TD6kjT7TSfwI1MrXnhpodiINiWkzbc0UZrSHRGYs9KkKHX2oyGeRoIWVNiRwEkDexNkXx6KlyTbZEZXHq4BxdCZ4Vrl7Ulxxj7anf+ParY3s4Z+epIsVWGB/z38wD69SucfMPssPFWSr+Uj6AsrE8brKJc6ouUyZrJmj4dlc4VIICVGZyZCqpPIzLD/2ltFKYDfsHNjRuJ1wJfMH6m3DPlEviexLJzHe5GhGi5PD7Vb8TzGCCZMt8kTQfizKHM5PwxhVVlFlIfKZET8ObLEjpd+1bTNv8La5ww2opQFj89D6bh4jG+x0km2Y1mUyO9IVoXfU0LnWUFZic0HUUNT8zg/KNqLAVA79UHOOsIx8TZUkQppqwOnbhjkm1tblFSDhKnM/+zChAuJw=
+  on:
+    repo: wooorm/collapse-white-space

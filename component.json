@@ -1,0 +1,15 @@
+{
+  "name": "collapse-white-space",
+  "version": "0.0.0",
+  "description": "Replace multiple white-space characters with a single space",
+  "license": "MIT",
+  "keywords": [
+    "collapse",
+    "white",
+    "space"
+  ],
+  "repository": "wooorm/collapse-white-space",
+  "scripts": [
+    "index.js"
+  ]
+}

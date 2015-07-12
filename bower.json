@@ -1,0 +1,33 @@
+{
+  "name": "collapse-white-space",
+  "main": "collapse-white-space.js",
+  "description": "Replace multiple white-space characters with a single space",
+  "license": "MIT",
+  "keywords": [
+    "collapse",
+    "white",
+    "space"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/collapse-white-space.git"
+  },
+  "authors": [
+    "Titus Wormer <tituswormer@gmail.com>"
+  ],
+  "ignore": [
+    ".*",
+    "*.log",
+    "*.md",
+    "build/",
+    "components/",
+    "coverage/",
+    "node_modules/",
+    "build.js",
+    "example.js",
+    "index.js",
+    "test.js",
+    "component.json",
+    "package.json"
+  ]
+}
