@@ -1,26 +1,24 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module collapse-white-space
+ * @fileoverview Test suite for `collapse-white-space`.
+ */
+
 'use strict';
 
-/* eslint-env mocha */
+/* Dependencies. */
+var test = require('tape');
+var collapse = require('./index.js');
 
-/*
- * Dependencies.
- */
+/* Tests. */
+test('collapseWhiteSpace(value)', function (t) {
+  t.equal(collapse(true), 'true', 'should coerce to string');
 
-var collapse = require('./');
-var assert = require('assert');
+  t.equal(collapse(' \t\nbar \nbaz\t'), ' bar baz ');
+  t.equal(collapse('   bar\t\t\tbaz\n\n\n'), ' bar baz ');
+  t.equal(collapse(' \n bar\t\n\tbaz\r\n'), ' bar baz ');
 
-/*
- * Tests.
- */
-
-describe('collapse(value)', function () {
-    it('should coerce to string', function () {
-        assert.equal(collapse(true), 'true');
-    });
-
-    it('should work', function () {
-        assert.equal(collapse(' \t\nbar \nbaz\t'), ' bar baz ');
-        assert.equal(collapse('   bar\t\t\tbaz\n\n\n'), ' bar baz ');
-        assert.equal(collapse(' \n bar\t\n\tbaz\r\n'), ' bar baz ');
-    });
+  t.end();
 });

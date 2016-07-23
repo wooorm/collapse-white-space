@@ -1,11 +1,16 @@
-'use strict';
-
-/*
- * Constants.
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module collapse-white-space
+ * @fileoverview Replace multiple white-space characters
+ *   with a single space.
  */
 
-var WHITE_SPACE_COLLAPSABLE = /\s+/g;
-var SPACE = ' ';
+'use strict';
+
+/* Expose. */
+module.exports = collapse;
 
 /**
  * Replace multiple white-space characters with a single space.
@@ -18,11 +23,5 @@ var SPACE = ' ';
  * @return {string} - Value with collapsed white-space.
  */
 function collapse(value) {
-    return String(value).replace(WHITE_SPACE_COLLAPSABLE, SPACE);
+  return String(value).replace(/\s+/g, ' ');
 }
-
-/*
- * Expose.
- */
-
-module.exports = collapse;
