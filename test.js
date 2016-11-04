@@ -1,18 +1,8 @@
-/**
- * @author Titus Wormer
- * @copyright 2015 Titus Wormer
- * @license MIT
- * @module collapse-white-space
- * @fileoverview Test suite for `collapse-white-space`.
- */
-
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
 var collapse = require('./index.js');
 
-/* Tests. */
 test('collapseWhiteSpace(value)', function (t) {
   t.equal(collapse(true), 'true', 'should coerce to string');
 
