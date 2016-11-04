@@ -1,7 +1,5 @@
 # collapse-white-space [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-<!--lint disable heading-increment list-item-spacing no-duplicate-headings-->
-
 Replace multiple white-space characters with a single space.
 
 ## Installation
