@@ -8,14 +8,14 @@
     "white",
     "space"
   ],
-  "files": [
-    "index.js"
-  ],
-  "repository": "https://github.com/wooorm/collapse-white-space",
+  "repository": "wooorm/collapse-white-space",
   "bugs": "https://github.com/wooorm/collapse-white-space/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -48,6 +48,8 @@
     ]
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
