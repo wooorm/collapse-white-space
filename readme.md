@@ -12,37 +12,17 @@ npm install collapse-white-space
 
 ## Usage
 
-Dependencies.
-
 ```javascript
 var collapse = require('collapse-white-space');
-```
 
-Collapse white space:
-
-```javascript
-var result = collapse('\tfoo \n\tbar  \t\r\nbaz');
-```
-
-Yields:
-
-```text
- foo bar baz
+collapse('\tfoo \n\tbar  \t\r\nbaz'); //=> ' foo bar baz'
 ```
 
 ## API
 
 ### `collapse(value)`
 
-Replace multiple white-space characters with a single space.
-
-###### Parameters
-
-*   `value` (`string`) — Value with uncollapsed white-space, coerced to string.
-
-###### Returns
-
-`string` — Value with collapsed white-space.
+Replace multiple white-space characters in value with a single space.
 
 ## License
 
