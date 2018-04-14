@@ -5,6 +5,7 @@ node_js:
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: ksLoQGm0zwXg/giTCPpGfEOn9wT7AGgGJr4CUt+6OCo3+GdNOTcvi47cmNMGLhhiKP4rS0VPquZQ1pNVjXzmKjq+6Mg6BWqMpUQMsHAwHGrVCxaGMW3YdkUOhgMkeEmcl2ckJdsH5NtYv5pfpn78FgD6dqP4gy1DGLk4fmWq1BK11jAYFDMtWqnV2sX5fCbG6shRLeRQH2BWGVXUt8/5LFEtQkWItNDt8KYw685jur44Y10nrT67e3YTrMeQlxHYH3yjN9qg1s8s1SGs35bWIfB7dR+mpwTkf1P6f7VaA1zXpYu9eQys2yhHObm31wwSLBgMML5PTftbP5+y3bVMXafYLddAVJevweVBafXkmPmIK+mVuz5KdvcPuGOIc59lkV9qCC+vo9eAilo8z1YjHsdMe1gBYZEf339BSZd+eEsHF6D6ArQl3FzafGB588p1oX0BeVnb2Qi+eDJsuENUTfBZingPWD9OOj+VzFPzB9G/MqVn/eafZQ+fDtTWER9vDOsuosVxFKvf3QxCNdnAVm4ZhGyuGdhvHyIq5YYDPbMW4UViO6e7pVbIFMP9yci+dW2kVv8vHLaaWyL64LxOQ28CIo7MTayk2nWdEXKEiZ0zv1eHPV/Tf5bbVrLCsevNzj2zyMlStswQ4X8adv+d5y6ypGLPCI68gi94gZWcDEc=
   file:
@@ -12,5 +13,3 @@ deploy:
     - "collapse-white-space.min.js"
   on:
     tags: true
-    skip_cleanup: true
-    node: node
