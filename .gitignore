@@ -5,3 +5,4 @@ coverage/
 node_modules/
 collapse-white-space.js
 collapse-white-space.min.js
+yarn.lock
