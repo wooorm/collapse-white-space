@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var collapse = require('./index.js');
+var collapse = require('.');
 
 test('collapseWhiteSpace(value)', function (t) {
   t.equal(collapse(true), 'true', 'should coerce to string');
