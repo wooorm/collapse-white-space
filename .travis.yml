@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/boron
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: ksLoQGm0zwXg/giTCPpGfEOn9wT7AGgGJr4CUt+6OCo3+GdNOTcvi47cmNMGLhhiKP4rS0VPquZQ1pNVjXzmKjq+6Mg6BWqMpUQMsHAwHGrVCxaGMW3YdkUOhgMkeEmcl2ckJdsH5NtYv5pfpn78FgD6dqP4gy1DGLk4fmWq1BK11jAYFDMtWqnV2sX5fCbG6shRLeRQH2BWGVXUt8/5LFEtQkWItNDt8KYw685jur44Y10nrT67e3YTrMeQlxHYH3yjN9qg1s8s1SGs35bWIfB7dR+mpwTkf1P6f7VaA1zXpYu9eQys2yhHObm31wwSLBgMML5PTftbP5+y3bVMXafYLddAVJevweVBafXkmPmIK+mVuz5KdvcPuGOIc59lkV9qCC+vo9eAilo8z1YjHsdMe1gBYZEf339BSZd+eEsHF6D6ArQl3FzafGB588p1oX0BeVnb2Qi+eDJsuENUTfBZingPWD9OOj+VzFPzB9G/MqVn/eafZQ+fDtTWER9vDOsuosVxFKvf3QxCNdnAVm4ZhGyuGdhvHyIq5YYDPbMW4UViO6e7pVbIFMP9yci+dW2kVv8vHLaaWyL64LxOQ28CIo7MTayk2nWdEXKEiZ0zv1eHPV/Tf5bbVrLCsevNzj2zyMlStswQ4X8adv+d5y6ypGLPCI68gi94gZWcDEc=
+    secure: NrIhbr49Fhvj7wkLRaJCf+NKg6fWuXCPNw6yELcJmFUgrhaCz6BJ8JnJv1R9yAQQaU9lT6krFIux0QxLLMcn2lkSy8x3aUX6JM5C4uEsh1Mu2gI9591EPobNL2EglrOZDhn996Q52s5iDaHXzzgYFqpSWwde4msmpjjkwd6rqAjpZHZ/DTCDL+SqDVR6DkFdoJO/2L6asP4Hp0+wKsH44z2ltkTzYNHbURmEFyGXbysO2DNLGhpRlTR/zQdSNOl4RCsAh88lYR9IlIiJkDscYkdr/aLVAZ9PQebeLWuB4DUPUOXpYncmnXS7lEkGU9+Zqxex4LHvuQ8TxsYBEgPRKicPfCnD6qTc9MleTLejh98K113soxs4+J8ABXWCDGYN/7XI44s+kSbzPGESD48SCSKb0EopBX6IKR4I1Pch2rfC4ci6LNHIHRcocLiYVhM8DOQgAukZh01jIcqwfDfNwu6WC0zIa9tou3rhqV+agJkHStzypG7guvN52jDqyCAGC6WxVByFBn/i/7xSosyjddcebRxPaIFGT8KowywlAeWJGtQ7fJj5cW9XwRKdQvwBCJmQwtKkwQnEl//4VcaJgiFqWdBfeKXvQz4AcLL1YSZ1k9eTJaiXEBfSp67UvaABfs6S0YAu3zS68dRVCbSIyLYE+NAfzdFkaqumKUfQs7s=
   file:
-    - "collapse-white-space.js"
-    - "collapse-white-space.min.js"
+    - 'collapse-white-space.js'
+    - 'collapse-white-space.min.js'
   on:
     tags: true
