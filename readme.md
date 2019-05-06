@@ -42,4 +42,4 @@ Replace multiple white-space characters in value with a single space.
 
 [license]: LICENSE
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
