@@ -48,11 +48,6 @@
   "xo": {
     "prettier": true,
     "esnext": false,
-    "rules": {
-      "capitalized-comments": "off",
-      "no-var": "off",
-      "prefer-arrow-callback": "off"
-    },
     "ignores": [
       "collapse-white-space.js"
     ]
