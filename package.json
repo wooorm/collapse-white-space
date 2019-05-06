@@ -1,6 +1,6 @@
 {
   "name": "collapse-white-space",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Replace multiple white-space characters with a single space",
   "license": "MIT",
   "keywords": [
