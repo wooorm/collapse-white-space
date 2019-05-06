@@ -40,6 +40,6 @@ Replace multiple white-space characters in value with a single space.
 
 [npm-install]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: license
 
 [author]: https://wooorm.com
