@@ -3,7 +3,7 @@
 var test = require('tape')
 var collapse = require('.')
 
-test('collapseWhiteSpace(value)', function(t) {
+test('collapseWhiteSpace(value)', function (t) {
   t.equal(collapse(true), 'true', 'should coerce to string')
 
   t.equal(collapse(' \t\nbar \nbaz\t'), ' bar baz ')
