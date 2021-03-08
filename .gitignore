@@ -1,8 +1,5 @@
 .DS_Store
 *.log
-.nyc_output/
 coverage/
 node_modules/
-collapse-white-space.js
-collapse-white-space.min.js
 yarn.lock
