@@ -33,7 +33,8 @@ There is no default export.
 
 ### `collapseWhiteSpace(value)`
 
-Replace multiple whitespace characters in value with a single space.
+Replace multiple whitespace characters in `value` (`string`) with a single
+space.
 
 ## License
 
