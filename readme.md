@@ -35,9 +35,9 @@ Replace multiple whitespace characters in value with a single space.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/collapse-white-space.svg
+[build-badge]: https://github.com/wooorm/collapse-white-space/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/collapse-white-space
+[build]: https://github.com/wooorm/collapse-white-space/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/collapse-white-space.svg
 
