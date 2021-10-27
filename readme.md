@@ -108,6 +108,8 @@ The default is to keep it.
 ## Types
 
 This package is fully typed with [TypeScript][].
+It exports `Options` and `Style` types, which specify the interface of the
+accepted options.
 
 ## Compatibility
 
