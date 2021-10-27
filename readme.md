@@ -5,20 +5,34 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Collapse white space to a single space.
+Collapse white space.
 
 ## Contents
 
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
 *   [Install](#install)
 *   [Use](#use)
 *   [API](#api)
-    *   [`collapseWhiteSpace(value)`](#collapsewhitespacevalue)
+    *   [`collapseWhiteSpace(value[, options|style])`](#collapsewhitespacevalue-optionsstyle)
 *   [Types](#types)
 *   [Compatibility](#compatibility)
 *   [Security](#security)
 *   [Related](#related)
 *   [Contribute](#contribute)
 *   [License](#license)
+
+## What is this?
+
+This is a small package that collapses multiple white space characters into one.
+
+## When should I use this?
+
+You can use this package if you want to HTML or JavaScript (default) white space
+to a single character.
+You can optionally drop initial and final white space.
+By default it collapses to a single space, but optionally line endings can be
+preserved.
 
 ## Install
 
@@ -56,18 +70,40 @@ collapseWhiteSpace('\tfoo \n\tbar  \t\r\nbaz') //=> ' foo bar baz'
 This package exports the following identifier: `collapseWhiteSpace`.
 There is no default export.
 
-### `collapseWhiteSpace(value)`
+### `collapseWhiteSpace(value[, options|style])`
 
-Collapse white space to a single space.
+Collapse white space in `value` (`string`).
 
-###### Parameters
+##### `style`
 
-*   `value` (`string`)
-    – value to collapse white space in
+Treated as `options.style`.
+
+##### `options`
+
+Configuration.
+
+###### `options.style`
+
+Style of white space to support (`'html'` or `'js'`, default: `'js'`).
+JavaScript white space matches the pattern `\s+`.
+HTML white space matches `[\t\n\v\f\r ]`.
+
+###### `options.preserveLineEndings`
+
+Whether to collapse white space containing a line ending to that line ending
+(`boolean`, default: `false`).
+The default is to collapse to a single space.
+Line endings matches the pattern `\r?\n|\r`.
+
+###### `options.trim`
+
+Whether to drop white space at the start and end of `value` (`boolean`, default:
+`false`).
+The default is to keep it.
 
 ###### Returns
 
-`value` (`string`) – value with collapsed white space.
+`string` – value with collapsed white space.
 
 ## Types
 

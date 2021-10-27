@@ -1,7 +1,7 @@
 {
   "name": "collapse-white-space",
   "version": "2.0.0",
-  "description": "Collapse white space to a single space",
+  "description": "Collapse white space",
   "license": "MIT",
   "keywords": [
     "collapse",
