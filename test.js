@@ -2,7 +2,7 @@ import test from 'tape'
 import {collapseWhiteSpace} from './index.js'
 
 test('collapseWhiteSpace(value)', function (t) {
-  // @ts-ignore runtime
+  // @ts-expect-error Incorrect `value`.
   t.equal(collapseWhiteSpace(true), 'true', 'should coerce to string')
 
   t.equal(collapseWhiteSpace(' \t\nbar \nbaz\t'), ' bar baz ')
