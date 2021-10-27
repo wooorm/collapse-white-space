@@ -5,17 +5,42 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Replace multiple whitespace characters with a single space.
+Collapse white space to a single space.
+
+## Contents
+
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`collapseWhiteSpace(value)`](#collapsewhitespacevalue)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Security](#security)
+*   [Related](#related)
+*   [Contribute](#contribute)
+*   [License](#license)
 
 ## Install
 
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 
 ```sh
 npm install collapse-white-space
+```
+
+In Deno with [Skypack][]:
+
+```js
+import {collapseWhiteSpace} from 'https://cdn.skypack.dev/collapse-white-space@2?dts'
+```
+
+In browsers with [Skypack][]:
+
+```html
+<script type="module">
+  import {collapseWhiteSpace} from 'https://cdn.skypack.dev/collapse-white-space@2?min'
+</script>
 ```
 
 ## Use
@@ -28,13 +53,49 @@ collapseWhiteSpace('\tfoo \n\tbar  \t\r\nbaz') //=> ' foo bar baz'
 
 ## API
 
-This package exports the following identifiers: `collapseWhiteSpace`.
+This package exports the following identifier: `collapseWhiteSpace`.
 There is no default export.
 
 ### `collapseWhiteSpace(value)`
 
-Replace multiple whitespace characters in `value` (`string`) with a single
-space.
+Collapse white space to a single space.
+
+###### Parameters
+
+*   `value` (`string`)
+    – value to collapse white space in
+
+###### Returns
+
+`value` (`string`) – value with collapsed white space.
+
+## Types
+
+This package is fully typed with [TypeScript][].
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+It also works in Deno and modern browsers.
+
+## Security
+
+This package is safe.
+
+## Related
+
+*   [`wooorm/is-whitespace-character`](https://github.com/wooorm/is-whitespace-character)
+    — check if a character is a white space character
+*   [`wooorm/detab`](https://github.com/wooorm/detab)
+    — convert tabs to spaces
+*   [`wooorm/trim-lines`](https://github.com/wooorm/trim-lines)
+    — remove tabs and spaces around line-breaks
+
+## Contribute
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
 
 ## License
 
@@ -60,6 +121,14 @@ space.
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[skypack]: https://www.skypack.dev
+
 [license]: license
 
 [author]: https://wooorm.com
+
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
