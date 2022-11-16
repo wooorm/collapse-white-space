@@ -5,10 +5,13 @@
  *   Configuration.
  * @property {Style} [style='js']
  *   Style of white space to support.
+ *   JavaScript white space matches the pattern `\s`.
+ *   HTML white space matches `[\t\n\v\f\r ]`.
  * @property {boolean} [preserveLineEndings=false]
  *   Whether to collapse white space containing a line ending to that line
  *   ending.
  *   The default is to collapse to a single space.
+ *   Line endings matches the pattern `\r?\n|\r`.
  * @property {boolean} [trim=false]
  *   Whether to drop white space at the start and end of `value`.
  *   The default is to keep it.
@@ -23,7 +26,7 @@ const html = /[\t\n\v\f\r ]+/g
  * @param {string} value
  *   Value to collapse white space in.
  * @param {Style|Options} [options='js']
- *   Configuration.
+ *   Configuration (optional).
  * @returns {string}
  *   Value with collapsed white space.
  */

@@ -37,7 +37,7 @@ preserved.
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
+In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install collapse-white-space
@@ -67,7 +67,7 @@ collapseWhiteSpace('\tfoo \n\tbar  \t\r\nbaz') //=> ' foo bar baz'
 
 ## API
 
-This package exports the following identifier: `collapseWhiteSpace`.
+This package exports the identifier `collapseWhiteSpace`.
 There is no default export.
 
 ### `collapseWhiteSpace(value[, options|style])`
@@ -76,16 +76,16 @@ Collapse white space in `value` (`string`).
 
 ##### `style`
 
-Treated as `options.style`.
+Treated as `options.style` (`'html'` or `'js'`, default: `'js'`).
 
 ##### `options`
 
-Configuration.
+Configuration (optional).
 
 ###### `options.style`
 
 Style of white space to support (`'html'` or `'js'`, default: `'js'`).
-JavaScript white space matches the pattern `\s+`.
+JavaScript white space matches the pattern `\s`.
 HTML white space matches `[\t\n\v\f\r ]`.
 
 ###### `options.preserveLineEndings`
@@ -103,18 +103,17 @@ The default is to keep it.
 
 ###### Returns
 
-`string` – value with collapsed white space.
+Value with collapsed white space (`string`).
 
 ## Types
 
 This package is fully typed with [TypeScript][].
-It exports `Options` and `Style` types, which specify the interface of the
-accepted options.
+It exports the additional types `Options` and `Style`.
 
 ## Compatibility
 
 This package is at least compatible with all maintained versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 It also works in Deno and modern browsers.
 
 ## Security
